@@ -125,8 +125,18 @@ img {
   }
   &.circle {
     border-radius: 50%;
-    max-width: 25%;
+    width: 150px;
+    height: 150px;
     margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 110%;
+      height: 110%;
+      object-fit: cover;
+      object-position: -10px 70%;
+    }
   }
 }
 
